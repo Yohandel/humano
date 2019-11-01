@@ -1,16 +1,22 @@
 import React from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, 
+  Nav, 
+  NavDropdown,
+  Form,
+  FormControl,
+  Button 
+} from "react-bootstrap";
 
 const navbar = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+    <Navbar collapseOnSelect expand="lg"  variant="dark" fixed="top" style={{backgroundColor:"#00BBEC", textDecoration:"none"}}>
       <Navbar.Brand href="/">Home</Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
+      <Navbar.Toggle aria-controls="rbasic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
 
         <Nav className="mr-auto">
-          <Nav.Link href="contactus">Contact Us</Nav.Link>
-          <Nav.Link href="products">Products</Nav.Link>
+          <Navbar.Brand href="contactus">Contact Us</Navbar.Brand>
+          <Navbar.Brand href="products">Products</Navbar.Brand>
           {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">
@@ -25,12 +31,9 @@ const navbar = () => {
         </Nav>
 
         <Nav>
-          <Nav.Link href="#deets">More deets</Nav.Link>
-          <Nav.Link eventKey={2} href="#memes">
-            Dank memes
-          </Nav.Link>
+        <FormControl type="text" placeholder="Search" style={{width:230,height:40}} className="mr-sm-2" />        
+        <Button variant="outline-dark" size='sm' style={{width:100,height:40, }}>Search</Button>
         </Nav>
-
       </Navbar.Collapse>
     </Navbar>
   );

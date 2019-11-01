@@ -1,4 +1,5 @@
 import React from "react";
+import {Button} from 'react-bootstrap'
 
 const ContactContent = () => {
   return (
@@ -8,29 +9,29 @@ const ContactContent = () => {
           <h1>Contact Us</h1>
         </header>
         <form method="post" action="#">
-          <div class="fields">
-            <div class="field">
-              <label for="name">Name</label>
+          <div className="fields">
+            <div className="field">
+              <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" />
             </div>
-            <div class="field">
-              <label for="email">Email</label>
+            <div className="field">
+              <label htmlFor="email">Email</label>
               <input type="text" name="email" id="email" />
             </div>
-            <div class="field">
-              <label for="message">Message</label>
+            <div className="field">
+              <label htmlFor="message">Message</label>
               <textarea name="message" id="message" rows="3"></textarea>
             </div>
           </div>
-          <ul class="actions">
+          <ul className="actions">
             <li>
               <input type="submit" value="Send Message" />
             </li>
           </ul>
         </form>
       </section>
-      <section class="split contact">
-        <section class="alt">
+      <section className="split contact">
+        <section className="alt">
           <h3>Address</h3>
           <p>
             1234 Somewhere Road #87257
@@ -52,25 +53,25 @@ const ContactContent = () => {
         </section>
         <section>
           <h3>Social</h3>
-          <ul class="icons alt">
+          <ul className="icons alt">
             <li>
-              <a href="#" class="icon brands alt fa-twitter">
-                <span class="label">Twitter</span>
+              <a href="#" className="icon brands alt fa-twitter">
+                <span className="label">Twitter</span>
               </a>
             </li>
             <li>
-              <a href="#" class="icon brands alt fa-facebook-f">
-                <span class="label">Facebook</span>
+              <a href="#" className="icon brands alt fa-facebook-f">
+                <span className="label">Facebook</span>
               </a>
             </li>
             <li>
-              <a href="#" class="icon brands alt fa-instagram">
-                <span class="label">Instagram</span>
+              <a href="#" className="icon brands alt fa-instagram">
+                <span className="label">Instagram</span>
               </a>
             </li>
             <li>
-              <a href="#" class="icon brands alt fa-github">
-                <span class="label">GitHub</span>
+              <a href="#" className="icon brands alt fa-github">
+                <span className="label">GitHub</span>
               </a>
             </li>
           </ul>

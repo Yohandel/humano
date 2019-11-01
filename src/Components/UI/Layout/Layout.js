@@ -8,9 +8,8 @@ const Layout = (props) => {
     return (
         <div>   
             <Navbar/>
-        <Container >
+        <Container fluid={false}>
             {props.children}
-        
         </Container>
         </div>
     )
