@@ -1,22 +1,21 @@
 import React from "react";
+import humano from '../../images/humano.jpg'
 
 const ProductsContent = () => {
   return (
     <div id="main">
       <article className="post featured">
         <header className="major">
+        <a href="/" className="image main">
+          <img src={humano} alt="" />
+        </a>
           <h2>Products</h2>
           <p>
             Aenean ornare velit lacus varius enim ullamcorper proin aliquam
-            <br />
             facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor
-            <br />
             amet nullam sed etiam veroeros.
           </p>
         </header>
-        <a href="/" className="image main">
-          <img src="images/pic01.jpg" alt="" />
-        </a>
       </article>
 
       <section className="posts">
@@ -31,7 +30,7 @@ const ProductsContent = () => {
             </h2>
           </header>
           <a href="/" className="image fit">
-            <img src="images/pic02.jpg" alt="" />
+            <img src={humano}alt="" />
           </a>
           <p>
             Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
@@ -57,7 +56,7 @@ const ProductsContent = () => {
             </h2>
           </header>
           <a href="/" className="image fit">
-            <img src="images/pic03.jpg" alt="" />
+            <img src={humano} alt="" />
           </a>
           <p>
             Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
@@ -83,7 +82,7 @@ const ProductsContent = () => {
             </h2>
           </header>
           <a href="/" className="image fit">
-            <img src="images/pic04.jpg" alt="" />
+            <img src={humano} alt="" />
           </a>
           <p>
             Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
@@ -109,7 +108,7 @@ const ProductsContent = () => {
             </h2>
           </header>
           <a href="/" className="image fit">
-            <img src="images/pic05.jpg" alt="" />
+            <img src={humano} alt="" />
           </a>
           <p>
             Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
@@ -135,7 +134,7 @@ const ProductsContent = () => {
             </h2>
           </header>
           <a href="/" className="image fit">
-            <img src="images/pic06.jpg" alt="" />
+            <img src={humano} alt="" />
           </a>
           <p>
             Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
@@ -161,7 +160,7 @@ const ProductsContent = () => {
             </h2>
           </header>
           <a href="/" className="image fit">
-            <img src="images/pic06.jpg" alt="" />
+            <img src={humano} alt="" />
           </a>
           <p>
             Donec eget ex magna. Interdum et malesuada fames ac ante ipsum

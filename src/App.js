@@ -1,18 +1,14 @@
-import React from 'react';
-import Layout from './Components/UI/Layout/Layout';
-import Home from './Components/Home/Home';
-import ContactUs from './Components/ContactUs/ContactUs'
-import Products from './Components/Products/Products'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import React from "react";
+import Layout from "./Components/UI/Layout/Layout";
+import Home from "./Components/Home/Home";
+import ContactUs from "./Components/ContactUs/ContactUs";
+import Products from "./Components/Products/Products";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <Layout>
-        <Router>
+      <Router>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -24,9 +20,7 @@ function App() {
             <Products />
           </Route>
         </Switch>
-
-    </Router>
-      
+      </Router>
     </Layout>
   );
 }
