@@ -40,13 +40,13 @@ const navbar = () => {
           <FormControl
             type="text"
             placeholder="Search"
-            style={{ width: 230, height: 40 }}
+            style={{ width: 230, height: 40, borderRadius: 5, backgroundColor:'#fff' }}
             className="mr-sm-2"
           />
           <Button
-            variant="outline-dark"
+            variant="dark"
             size="sm"
-            style={{ width: 100, height: 40 }}
+            style={{ width: 100, height: 40, borderRadius: 5, backgroundColor:'#fff' }}
           >
             Search
           </Button>
