@@ -40,7 +40,7 @@ const navbar = () => {
           <FormControl
             type="text"
             placeholder="Search"
-            style={{ width: 230, height: 40, borderRadius: 5, backgroundColor:'#fff' }}
+            style={{ width: 230, height: 40, borderRadius: 5, backgroundColor:'#fff',marginBottom: 5 }}
             className="mr-sm-2"
           />
           <Button
