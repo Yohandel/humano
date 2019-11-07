@@ -7,6 +7,8 @@ import {
   FormControl,
   Button
 } from "react-bootstrap";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faSearch,faHome } from '@fortawesome/free-solid-svg-icons'
 
 const navbar = () => {
   return (
@@ -17,7 +19,7 @@ const navbar = () => {
       fixed="top"
       style={{ backgroundColor: "#00BBEC", textDecoration: "none" }}
     >
-      <Navbar.Brand href="/">Home</Navbar.Brand>
+      <Navbar.Brand href="/"><FontAwesomeIcon icon={faHome} size = 'lg' /></Navbar.Brand>
       <Navbar.Toggle aria-controls="rbasic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
@@ -48,7 +50,7 @@ const navbar = () => {
             size="sm"
             style={{ width: 100, height: 40, borderRadius: 5, backgroundColor:'#fff' }}
           >
-            Search
+           <FontAwesomeIcon icon={faSearch} size = 'lg' />
           </Button>
         </Nav>
       </Navbar.Collapse>
